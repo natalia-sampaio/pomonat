@@ -44,9 +44,13 @@ export default {
         },
         blueTheme: {
           "primary": "#70F3F8",
+          "secondary": "#1E213F",
+          "base-100": "#161932",
         },
         purpleTheme: {
           "primary": "#D881F8",
+          "secondary": "#1E213F",
+          "base-100": "#161932",
         }
       }
     ]
