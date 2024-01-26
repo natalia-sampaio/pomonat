@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,vue}",
   ],
   theme: {
     extend: {
@@ -13,14 +13,15 @@ export default {
         xl: '1440px',
       },
       colors: {
-        'red': 'F87070',
-        'blue': '70F3F8',
-        'purple': 'D881F8',
-        'background': '1E213F',
-        'surface': '161932',
-        'modal-bg': 'FFFFFF',
-        'modal-surface': 'EFF1FA',
-        'text': 'D7E0FF',
+        'primary': '#1E213F',
+        'primary-surface': '#161932',
+        'on-primary': '#D7E0FF',
+        'secondary-red': '#F87070',
+        'secondary-blue': '#70F3F8',
+        'secondary-purple': '#D881F8',
+        'on-secondary': '#1E213F',
+        'modal': '#FFFFFF',
+        'modal-surface': '#EFF1FA',
       },
       fontFamily: {
         kumbh: ['Kumbh Sans', 'sans-serif'],
