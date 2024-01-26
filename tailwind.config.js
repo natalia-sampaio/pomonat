@@ -12,6 +12,9 @@ export default {
         lg: '976px',
         xl: '1440px',
       },
+      boxShadow: {
+        '3xl': '50px 50px 100px 0px #121530, -50px -50px 100px 0px #272C5A'
+      },
       /* colors: {
         'primary': '#1E213F',
         'primary-surface': '#161932',
@@ -24,9 +27,9 @@ export default {
         'modal-surface': '#EFF1FA',
       }, */
       fontFamily: {
-        kumbh: ['Kumbh Sans', 'sans-serif'],
-        roboto: ['Roboto Slab', 'serif'],
-        space: ['Space Mono', 'monospace']
+        'kumbh-sans': ['Kumbh\\ Sans', 'sans-serif'],
+        'roboto-slab': ['Roboto\\ Slab', 'serif'],
+        'space-mono': ['Space\\ Mono', 'monospace']
       }
     },
   },
