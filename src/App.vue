@@ -33,9 +33,24 @@ import FontInput from './components/FontInput.vue';
 
         <SettingSection title="font">
           <div class="flex justify-end gap-4">
-            <FontInput fontName="Kumbh Sans" fontFamily="font-kumbh-sans" peerName="peer/kumbh-sans" peerDefinition="peer-checked/kumbh-sans:bg-primary" />
-            <FontInput fontName="Roboto Slab" fontFamily="font-roboto-slab" peerName="peer/roboto-slab" />
-            <FontInput fontName="Space Mono" fontFamily="font-space-mono" peerName="peer/space-mono" />
+            <FontInput 
+              fontName="Kumbh Sans" 
+              fontFamily="font-kumbh-sans" 
+              peerName="peer/kumbh-sans" 
+              peerDefinition="peer-checked/kumbh-sans:bg-primary" 
+            />
+            <FontInput 
+              fontName="Roboto Slab" 
+              fontFamily="font-roboto-slab" 
+              peerName="peer/roboto-slab"
+              peerDefinition="peer-checked/roboto-slab:bg-primary" 
+            />
+            <FontInput 
+              fontName="Space Mono" 
+              fontFamily="font-space-mono" 
+              peerName="peer/space-mono"
+              peerDefinition="peer-checked/space-mono:bg-primary"
+            />
           </div>
         </SettingSection>
 
