@@ -2,7 +2,9 @@
 import TimerIndicator from './components/TimerIndicator.vue';
 import TimerButton from './components/TimerButton.vue';
 import NumberInput from './components/NumberInput.vue';
+import SettingSection from './components/SettingSection.vue';
 import IconSettings from './components/icons/IconSettings.vue';
+import FontInput from './components/FontInput.vue';
 </script>
 
 <template>
@@ -21,14 +23,25 @@ import IconSettings from './components/icons/IconSettings.vue';
           </form>
           <h3 class="font-bold text-2xl">Configurações</h3>
         </div>
-        <div class="mx-12 my-6">
-          <h4 class="font-kumbh-sans font-bold text-sm tracking-[5px] uppercase">Tempo (minutos)</h4>
+        <SettingSection title="tempo (minutos)">
           <div class="flex gap-5">
-            <NumberInput label="pomodoro"/>
-            <NumberInput label="pausa curta"/>
-            <NumberInput label="pausa longa"/>
+            <NumberInput label="pomodoro" defaultValue="25"/>
+            <NumberInput label="pausa curta" defaultValue="5"/>
+            <NumberInput label="pausa longa" defaultValue="15"/>
           </div>
-        </div>
+        </SettingSection>
+
+        <SettingSection title="font">
+          <div class="flex justify-end gap-4">
+            <FontInput fontName="Kumbh Sans" fontFamily="font-kumbh-sans" peerName="peer/kumbh-sans" peerDefinition="peer-checked/kumbh-sans:bg-primary" />
+            <FontInput fontName="Roboto Slab" fontFamily="font-roboto-slab" peerName="peer/roboto-slab" />
+            <FontInput fontName="Space Mono" fontFamily="font-space-mono" peerName="peer/space-mono" />
+          </div>
+        </SettingSection>
+
+        <SettingSection title="color">
+
+        </SettingSection>
         <div class="modal-action">
           <form method="dialog">
             <!-- if there is a button in form, it will close the modal -->

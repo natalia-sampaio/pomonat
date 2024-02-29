@@ -3,6 +3,9 @@ defineProps({
     label: {
         type: String,
         required: true
+    },
+    defaultValue: {
+        type: Number
     }
 })
 </script>
@@ -11,6 +14,6 @@ defineProps({
         <div class="label">
             <span class="label-text">{{ label }}</span>
         </div>
-        <input type="number" placeholder="25" class="input input-bordered w-full max-w-xs" />
+        <input type="number" :value="defaultValue" placeholder="digite um número" class="input input-bordered w-full max-w-xs" />
     </label>
 </template>
