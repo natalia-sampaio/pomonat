@@ -41,16 +41,19 @@ export default {
           "primary": "#F87070",
           "secondary": "#1E213F",
           "base-100": "#161932",
+          "accent": "#FFF",
         },
         blueTheme: {
           "primary": "#70F3F8",
           "secondary": "#1E213F",
           "base-100": "#161932",
+          "accent": "#FFF",
         },
         purpleTheme: {
           "primary": "#D881F8",
           "secondary": "#1E213F",
           "base-100": "#161932",
+          "accent": "#FFF",
         }
       }
     ]
