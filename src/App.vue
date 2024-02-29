@@ -1,6 +1,7 @@
 <script setup>
 import TimerIndicator from './components/TimerIndicator.vue';
 import TimerButton from './components/TimerButton.vue';
+import NumberInput from './components/NumberInput.vue';
 import IconSettings from './components/icons/IconSettings.vue';
 </script>
 
@@ -21,7 +22,12 @@ import IconSettings from './components/icons/IconSettings.vue';
           <h3 class="font-bold text-2xl">Configurações</h3>
         </div>
         <div class="mx-12 my-6">
-          <h4 class="font-kumbh-sans font-bold text-sm tracking-[5px] uppercase">Time (minutes)</h4>
+          <h4 class="font-kumbh-sans font-bold text-sm tracking-[5px] uppercase">Tempo (minutos)</h4>
+          <div class="flex gap-5">
+            <NumberInput label="pomodoro"/>
+            <NumberInput label="pausa curta"/>
+            <NumberInput label="pausa longa"/>
+          </div>
         </div>
         <div class="modal-action">
           <form method="dialog">
