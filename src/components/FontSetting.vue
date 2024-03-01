@@ -15,12 +15,13 @@ defineProps({
             :class="`sr-only ${peerName}`" 
             value="default" 
             :aria-label="`radio for ${fontFamily}`"
+            checked
         />
         <label 
             :for="`${fontName}`" 
-            :class="`rounded-full p-2 ${peerDefinition} ${fontFamily}`"
+            :class="`rounded-full p-2 bg-secondary ${peerDefinition} ${fontFamily}`"
         >
-        Aa
+            Aa
         </label>
     </div>
 </template>

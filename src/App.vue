@@ -35,19 +35,19 @@ import ColorSetting from './components/ColorSetting.vue';
             fontName="Kumbh Sans" 
             fontFamily="font-kumbh-sans" 
             peerName="peer/kumbh-sans" 
-            peerDefinition="peer-checked/kumbh-sans:bg-primary" 
+            peerDefinition="peer-checked/kumbh-sans:bg-primary peer-checked/kumbh-sans:text-base-100" 
           />
           <FontSetting 
             fontName="Roboto Slab" 
             fontFamily="font-roboto-slab" 
             peerName="peer/roboto-slab"
-            peerDefinition="peer-checked/roboto-slab:bg-primary" 
+            peerDefinition="peer-checked/roboto-slab:bg-primary peer-checked/roboto-slab:text-base-100" 
           />
           <FontSetting 
             fontName="Space Mono" 
             fontFamily="font-space-mono" 
             peerName="peer/space-mono"
-            peerDefinition="peer-checked/space-mono:bg-primary"
+            peerDefinition="peer-checked/space-mono:bg-primary peer-checked/space-mono:text-base-100"
           />
         </SettingSection>
 
