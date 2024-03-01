@@ -1,10 +1,11 @@
 <script setup>
 import TimerIndicator from './components/TimerIndicator.vue';
 import TimerButton from './components/TimerButton.vue';
-import NumberInput from './components/NumberInput.vue';
+import TimeInput from './components/TimeInput.vue';
 import SettingSection from './components/SettingSection.vue';
 import IconSettings from './components/icons/IconSettings.vue';
-import FontInput from './components/FontInput.vue';
+import FontSetting from './components/FontSetting.vue';
+import ColorSetting from './components/ColorSetting.vue';
 </script>
 
 <template>
@@ -24,38 +25,51 @@ import FontInput from './components/FontInput.vue';
           <h3 class="font-bold text-2xl">Configurações</h3>
         </div>
         <SettingSection title="tempo (minutos)">
-          <div class="flex gap-5">
-            <NumberInput label="pomodoro" defaultValue="25"/>
-            <NumberInput label="pausa curta" defaultValue="5"/>
-            <NumberInput label="pausa longa" defaultValue="15"/>
-          </div>
+          <TimeInput label="pomodoro" defaultValue="25"/>
+          <TimeInput label="pausa curta" defaultValue="5"/>
+          <TimeInput label="pausa longa" defaultValue="15"/>
         </SettingSection>
 
         <SettingSection title="font">
-          <div class="flex justify-end gap-4">
-            <FontInput 
-              fontName="Kumbh Sans" 
-              fontFamily="font-kumbh-sans" 
-              peerName="peer/kumbh-sans" 
-              peerDefinition="peer-checked/kumbh-sans:bg-primary" 
-            />
-            <FontInput 
-              fontName="Roboto Slab" 
-              fontFamily="font-roboto-slab" 
-              peerName="peer/roboto-slab"
-              peerDefinition="peer-checked/roboto-slab:bg-primary" 
-            />
-            <FontInput 
-              fontName="Space Mono" 
-              fontFamily="font-space-mono" 
-              peerName="peer/space-mono"
-              peerDefinition="peer-checked/space-mono:bg-primary"
-            />
-          </div>
+          <FontSetting 
+            fontName="Kumbh Sans" 
+            fontFamily="font-kumbh-sans" 
+            peerName="peer/kumbh-sans" 
+            peerDefinition="peer-checked/kumbh-sans:bg-primary" 
+          />
+          <FontSetting 
+            fontName="Roboto Slab" 
+            fontFamily="font-roboto-slab" 
+            peerName="peer/roboto-slab"
+            peerDefinition="peer-checked/roboto-slab:bg-primary" 
+          />
+          <FontSetting 
+            fontName="Space Mono" 
+            fontFamily="font-space-mono" 
+            peerName="peer/space-mono"
+            peerDefinition="peer-checked/space-mono:bg-primary"
+          />
         </SettingSection>
 
         <SettingSection title="color">
-
+          <ColorSetting
+            color="Red Theme" 
+            peerName="peer/red-theme"
+            peerDefinition="peer-checked/red-theme:text-base-100"
+            data-theme="redTheme"
+          />
+          <ColorSetting
+            color="Blue Theme" 
+            peerName="peer/blue-theme"
+            peerDefinition="peer-checked/blue-theme:text-base-100"
+            data-theme="blueTheme"
+          />
+          <ColorSetting
+            color="Purple Theme" 
+            peerName="peer/purple-theme"
+            peerDefinition="peer-checked/purple-theme:text-base-100"
+            data-theme="purpleTheme"
+          />
         </SettingSection>
         <div class="modal-action">
           <form method="dialog">
