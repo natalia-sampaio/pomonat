@@ -1,9 +1,9 @@
 <script setup>
 defineProps({
-    fontName: "",
-    fontFamily: "",
-    peerName: "",
-    peerDefinition: "",
+    fontName: String,
+    fontFamily: String,
+    peerName: String,
+    peerDefinition: String,
 })
 </script>
 <template>

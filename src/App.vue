@@ -51,7 +51,7 @@ import ColorSetting from './components/ColorSetting.vue';
           />
         </SettingSection>
 
-        <SettingSection title="color">
+        <SettingSection title="color" class="border-b-0">
           <ColorSetting
             color="Red Theme" 
             peerName="peer/red-theme"
@@ -71,7 +71,7 @@ import ColorSetting from './components/ColorSetting.vue';
             data-theme="purpleTheme"
           />
         </SettingSection>
-        <div class="modal-action">
+        <div class="modal-action justify-center">
           <form method="dialog">
             <!-- if there is a button in form, it will close the modal -->
             <button class="btn bg-primary">Apply</button>
